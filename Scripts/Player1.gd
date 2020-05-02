@@ -1,51 +1,59 @@
 extends KinematicBody
 
 export(float) var speed = 5.5
-#export(PackedScene) var bullet
-#From Maeonyx
+export(float) var jogging_speed = 2.0
 
-signal update_position
+const friction = 0.95 # each frame the velocity decreases by 5%
+const vertical_axis = Vector3(0, 1, 0)
+const ten_degrees = 10 * TAU/360
+const twenty_degrees = ten_degrees + ten_degrees
+const thirty_degrees = ten_degrees + ten_degrees + ten_degrees
+const fourty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees
 
-var gravity = 20
-var vertical_velocity = 0
+var velocity = Vector3(1, 0, 0)
 
-var has_contact = false
+# _input happens when a key is pressed or the mouse is moved etc.
+# it is more efficient to use _input for input (when possible) than _physics_process
+func _input(event):
+    var movement = Vector3()
+    
+    # forward direction is the players current direction
+    var forward = velocity.normalized()
+    # each key is rotated further from the forward direction
+    # to move directly forward, the player can alternate left_1 and right_1
+    if event.is_action_pressed("move_left_1"):
+        movement += forward.rotated(vertical_axis, ten_degrees)
+    if event.is_action_pressed("move_left_2"):
+        movement += forward.rotated(vertical_axis, twenty_degrees)
+    if event.is_action_pressed("move_left_3"):
+        movement += forward.rotated(vertical_axis, thirty_degrees)
+    if event.is_action_pressed("move_left_4"):
+        movement += forward.rotated(vertical_axis, fourty_degrees)
+    
+    if event.is_action_pressed("move_right_1"):
+        movement += forward.rotated(vertical_axis, -ten_degrees)
+    if event.is_action_pressed("move_right_2"):
+        movement += forward.rotated(vertical_axis, -twenty_degrees)
+    if event.is_action_pressed("move_right_3"):
+        movement += forward.rotated(vertical_axis, -thirty_degrees)
+    if event.is_action_pressed("move_right_4"):
+        movement += forward.rotated(vertical_axis, -fourty_degrees)
+    
+    movement *= speed
+    
+    velocity += movement
 
 func _physics_process(delta):
-	var movement = Vector3(0, 0, 0)
-	
-	var camera_angle = get_node("/root/Game").get_camera_angle()
-	
-	if Input.is_action_pressed("ui_up"):
-		movement += Vector3(0, 0, -1).rotated(Vector3(0, 1, 0), camera_angle)
-		
-	if Input.is_action_pressed("ui_down"):
-		movement += Vector3(0, 0, 1).rotated(Vector3(0, 1, 0), camera_angle)
-		
-	#Diagnoal speed same as forward/back	
-	movement = movement.normalized()
-	movement *= speed
-	
-	vertical_velocity -= gravity * delta
-	movement.y += vertical_velocity
-	
-	#From Jeremy Bullock Vid on slopes and gravity
-	
-	#if (is_on_floor()):
-	#	has_contact = true
-	#else:
-	#	if !$Tail.is_colliding():
-	#		has_contact = false
-	
-	#if (has_contact and !is_on_floor()):
-	#	move_and_collide(Vector3(0, -1, 0))
-	
-	#It does mostly work for now but once the interface is changed it might need to be played with
-	
-	#move_and_slide(movement * speed)
-	#or
-	movement = move_and_slide(movement, Vector3(0, 1, 0))
-	
-	vertical_velocity = movement.y
-	
-	emit_signal("update_position", translation)
+    
+    # friction with minimum speed (jogging speed)
+    var jogging_velocity = velocity.normalized() * jogging_speed
+    var velocity_after_friction = velocity * 0.95
+    if jogging_velocity.length() > velocity_after_friction.length():
+        velocity = jogging_velocity
+    else:
+        velocity = velocity_after_friction
+    
+    velocity = move_and_slide(velocity, vertical_axis)
+    
+    # z direction is reversed because positive y-direction is downwards in 2D
+    rotation.y = Vector2(velocity.x, -velocity.z).angle()
