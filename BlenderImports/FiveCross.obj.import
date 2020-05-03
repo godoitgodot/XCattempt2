@@ -15,4 +15,5 @@ dest_files=[ "res://.import/FiveCross.obj-50bf28dc22f42fc028d9570500f9db0e.mesh"
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true

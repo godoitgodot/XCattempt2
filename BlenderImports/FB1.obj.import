@@ -15,4 +15,5 @@ dest_files=[ "res://.import/FB1.obj-24da01c46835e9c9f35a6256b9b213da.mesh", "res
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true

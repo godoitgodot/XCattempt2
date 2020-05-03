@@ -3,7 +3,7 @@ extends KinematicBody
 export(float) var speed = 5.5
 export(float) var jogging_speed = 2.0
 
-const friction = 0.95 # each frame the velocity decreases by 5%
+const friction = 0.98 # each frame the velocity decreases by 2%
 const vertical_axis = Vector3(0, 1, 0)
 const ten_degrees = 10 * TAU/360
 const twenty_degrees = ten_degrees + ten_degrees
@@ -47,7 +47,7 @@ func _physics_process(delta):
     
     # friction with minimum speed (jogging speed)
     var jogging_velocity = velocity.normalized() * jogging_speed
-    var velocity_after_friction = velocity * 0.95
+    var velocity_after_friction = velocity * friction
     if jogging_velocity.length() > velocity_after_friction.length():
         velocity = jogging_velocity
     else:
