@@ -5,6 +5,12 @@ extends Spatial
 export(NodePath) var player_path
 onready var player = get_node(player_path)
 
+func _ready():
+    # start the camera in the exact right place instead of a jarring motion if
+    # camera is not aligned with player at the start of the scene
+    translation = player.translation
+    rotation = player.rotation
+
 func _physics_process(delta):
     # Make the camera follow the player
     translation = translation.linear_interpolate(player.translation, 0.3)
