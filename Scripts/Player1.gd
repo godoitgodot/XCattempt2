@@ -10,7 +10,7 @@ const twenty_degrees = ten_degrees + ten_degrees
 const thirty_degrees = ten_degrees + ten_degrees + ten_degrees
 const fourty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees
 
-var velocity = Vector3(1, 0, 0)
+var velocity = Vector3(1, 0, 0).rotated(vertical_axis, rotation.y)
 
 # _input happens when a key is pressed or the mouse is moved etc.
 # it is more efficient to use _input for input (when possible) than _physics_process
