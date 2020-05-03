@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FB1.obj-24da01c46835e9c9f35a6256b9b213da.mesh"
+
+[deps]
+
+files=[ "res://.import/FB1.obj-24da01c46835e9c9f35a6256b9b213da.mesh" ]
+
+source_file="res://BlenderImports/FB1.obj"
+dest_files=[ "res://.import/FB1.obj-24da01c46835e9c9f35a6256b9b213da.mesh", "res://.import/FB1.obj-24da01c46835e9c9f35a6256b9b213da.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
