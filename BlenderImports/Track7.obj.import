@@ -15,5 +15,4 @@ dest_files=[ "res://.import/Track7.obj-7b2e9bc70b1555f3f12d67cce6947ae9.mesh", "
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true

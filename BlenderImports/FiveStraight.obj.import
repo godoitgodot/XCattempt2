@@ -15,5 +15,4 @@ dest_files=[ "res://.import/FiveStraight.obj-1bea8cb10885a79a9e4b3ee8aaafce73.me
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true
