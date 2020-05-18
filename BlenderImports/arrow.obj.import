@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/arrow.obj-28e054f0a8a66bcaa852f3f4b706027b.mesh"
+
+[deps]
+
+files=[ "res://.import/arrow.obj-28e054f0a8a66bcaa852f3f4b706027b.mesh" ]
+
+source_file="res://BlenderImports/arrow.obj"
+dest_files=[ "res://.import/arrow.obj-28e054f0a8a66bcaa852f3f4b706027b.mesh", "res://.import/arrow.obj-28e054f0a8a66bcaa852f3f4b706027b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

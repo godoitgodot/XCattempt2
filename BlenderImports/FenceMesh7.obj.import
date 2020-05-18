@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FenceMesh7.obj-10c8863bd2e5f3dc0cc0f75924908ad3.mesh"
+
+[deps]
+
+files=[ "res://.import/FenceMesh7.obj-10c8863bd2e5f3dc0cc0f75924908ad3.mesh" ]
+
+source_file="res://BlenderImports/FenceMesh7.obj"
+dest_files=[ "res://.import/FenceMesh7.obj-10c8863bd2e5f3dc0cc0f75924908ad3.mesh", "res://.import/FenceMesh7.obj-10c8863bd2e5f3dc0cc0f75924908ad3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

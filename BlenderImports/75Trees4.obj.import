@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/75Trees4.obj-ffffd7effdf883fa43eafab4a5a6a042.mesh"
+
+[deps]
+
+files=[ "res://.import/75Trees4.obj-ffffd7effdf883fa43eafab4a5a6a042.mesh" ]
+
+source_file="res://BlenderImports/75Trees4.obj"
+dest_files=[ "res://.import/75Trees4.obj-ffffd7effdf883fa43eafab4a5a6a042.mesh", "res://.import/75Trees4.obj-ffffd7effdf883fa43eafab4a5a6a042.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
