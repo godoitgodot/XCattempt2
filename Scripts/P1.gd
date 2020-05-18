@@ -13,9 +13,19 @@ const fourty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees
 
 var velocity = Vector3(1, 0, 0).rotated(vertical_axis, rotation.y)
 
+var keypress_allowed = true
+func allow_keypresses_again():
+    keypress_allowed = true
+
 # _input happens when a key is pressed or the mouse is moved etc.
 # it is more efficient to use _input for input (when possible) than _physics_process
+    
+
 func _input(event):
+    
+    if not keypress_allowed:
+        return
+    
     var movement = Vector3()
     
     # forward direction is the players current direction
@@ -46,6 +56,11 @@ func _input(event):
         movement += forward.rotated(vertical_axis, -thirty_degrees)
     if event.is_action_pressed("move_right_4"):
         movement += forward.rotated(vertical_axis, -fourty_degrees)
+    
+    # if we did actually move, prevent keypresses for a short amount of time.
+    if movement.length() != 0:
+        keypress_allowed = false
+        $KeypressTimer.start()
     
     movement *= speed
     

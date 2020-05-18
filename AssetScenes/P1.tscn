@@ -52,4 +52,6 @@ autoplay = "R2"
 playback_speed = 4.0
 anims/R2 = SubResource( 3 )
 
-[node name="Timer" type="Timer" parent="."]
+[node name="KeypressTimer" type="Timer" parent="."]
+wait_time = 0.094
+[connection signal="timeout" from="KeypressTimer" to="." method="allow_keypresses_again"]
