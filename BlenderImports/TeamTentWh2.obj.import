@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/TeamTentWh2.obj-700b1586b723c1cb6e3f026225a5c1ce.mesh"
+
+[deps]
+
+files=[ "res://.import/TeamTentWh2.obj-700b1586b723c1cb6e3f026225a5c1ce.mesh" ]
+
+source_file="res://BlenderImports/TeamTentWh2.obj"
+dest_files=[ "res://.import/TeamTentWh2.obj-700b1586b723c1cb6e3f026225a5c1ce.mesh", "res://.import/TeamTentWh2.obj-700b1586b723c1cb6e3f026225a5c1ce.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

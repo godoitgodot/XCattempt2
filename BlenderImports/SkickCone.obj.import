@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SkickCone.obj-187937731c686b44b15c609b3d1d0b9b.mesh"
+
+[deps]
+
+files=[ "res://.import/SkickCone.obj-187937731c686b44b15c609b3d1d0b9b.mesh" ]
+
+source_file="res://BlenderImports/SkickCone.obj"
+dest_files=[ "res://.import/SkickCone.obj-187937731c686b44b15c609b3d1d0b9b.mesh", "res://.import/SkickCone.obj-187937731c686b44b15c609b3d1d0b9b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -10,6 +10,8 @@ const ten_degrees = 10 * TAU/360
 const twenty_degrees = ten_degrees + ten_degrees
 const thirty_degrees = ten_degrees + ten_degrees + ten_degrees
 const fourty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees
+const fifty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees + ten_degrees
+const sixty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees + ten_degrees + ten_degrees
 
 var velocity = Vector3(1, 0, 0).rotated(vertical_axis, rotation.y)
 
@@ -44,18 +46,18 @@ func _input(event):
     if event.is_action_pressed("move_left_2"):
         movement += forward.rotated(vertical_axis, twenty_degrees)
     if event.is_action_pressed("move_left_3"):
-        movement += forward.rotated(vertical_axis, thirty_degrees)
-    if event.is_action_pressed("move_left_4"):
         movement += forward.rotated(vertical_axis, fourty_degrees)
+    if event.is_action_pressed("move_left_4"):
+        movement += forward.rotated(vertical_axis, sixty_degrees)
     
     if event.is_action_pressed("move_right_1"):
         movement += forward.rotated(vertical_axis, -ten_degrees)
     if event.is_action_pressed("move_right_2"):
         movement += forward.rotated(vertical_axis, -twenty_degrees)
     if event.is_action_pressed("move_right_3"):
-        movement += forward.rotated(vertical_axis, -thirty_degrees)
-    if event.is_action_pressed("move_right_4"):
         movement += forward.rotated(vertical_axis, -fourty_degrees)
+    if event.is_action_pressed("move_right_4"):
+        movement += forward.rotated(vertical_axis, -sixty_degrees)
     
     # if we did actually move, prevent keypresses for a short amount of time.
     if movement.length() != 0:
