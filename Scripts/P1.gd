@@ -3,6 +3,12 @@ extends KinematicBody
 export(float) var speed = 5.5
 export(float) var jogging_speed = 2.0
 
+signal stamina_changed
+
+var max_stamina : = 100.0
+var stamina = max_stamina
+var stamina_empty = 0.0
+
 const gravity = 9.8 # metres / second / second
 const friction = 0.98 # each frame the velocity decreases by 2%
 const vertical_axis = Vector3(0, 1, 0)
@@ -15,6 +21,7 @@ const sixty_degrees = ten_degrees + ten_degrees + ten_degrees + ten_degrees + te
 
 var velocity = Vector3(1, 0, 0).rotated(vertical_axis, rotation.y)
 
+
 var keypress_allowed = true
 func allow_keypresses_again():
     keypress_allowed = true
@@ -24,7 +31,6 @@ func allow_keypresses_again():
     
 
 func _input(event):
-    
     if not keypress_allowed:
         return
     
@@ -32,13 +38,14 @@ func _input(event):
     
     # forward direction is the players current direction
     var forward = velocity
+    var solforward = forward/2
     
     # Running should only move us horizontally even if we are currently
     # moving upwards or downwards.
     forward.y = 0
     
     forward = forward.normalized()
-    
+		
     # each key is rotated further from the forward direction
     # to move directly forward, the player can alternate left_1 and right_1
     if event.is_action_pressed("move_left_1"):
@@ -64,12 +71,48 @@ func _input(event):
         keypress_allowed = false
         $KeypressTimer.start()
     
+
+
+
+    
     movement *= speed
     
     velocity += movement
 
+
+	
+
+    if velocity.length() >= 13:
+	    stamina -= .7
+    if velocity.length() >= 12 and velocity.length() < 13:
+        stamina -= .6
+    if velocity.length() >= 11 and velocity.length() < 12:
+        stamina -= .5
+    if velocity.length() >= 10 and velocity.length() < 11:
+        stamina -= .4
+    if velocity.length() >= 9 and velocity.length() < 10:
+        stamina -= .3
+    if velocity.length() >= 8 and velocity.length() < 9:
+        stamina -= .2
+    if velocity.length() >= 7 and velocity.length() < 8:
+        stamina -= .1
+    stamina = clamp (stamina, 0.0, 100.0)
+    #print(velocity.length())
+	
+    if stamina == stamina_empty:
+        $KeypressTimer.wait_time = .1
+    
+		
+	
+	
+    emit_signal("stamina_changed", "stamina")
+	
+    #if velocity.length() < .5:
+       # velocity.length() + 1
+	
 func _physics_process(delta):
     
+	
     # Friction with minimum speed (jogging speed)
     # Friction applies to vertical velocity too. Depending on the strength of
     # gravity we will reach a terminal velocity, not sure what it will be.
@@ -79,10 +122,14 @@ func _physics_process(delta):
         velocity = jogging_velocity
     else:
         velocity = velocity_after_friction
-    
+   
+
     velocity.y -= gravity * delta
-    
+    #print(velocity.length())
     velocity = move_and_slide(velocity, vertical_axis)
+
+	
+
     
     # z direction is reversed because positive y-direction is downwards in 2D
     rotation.y = Vector2(velocity.x, -velocity.z).angle()

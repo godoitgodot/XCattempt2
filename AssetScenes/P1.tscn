@@ -33,7 +33,7 @@ tracks/0/keys = {
 
 [node name="P1" type="KinematicBody"]
 script = ExtResource( 1 )
-speed = 2.0
+speed = 1.5
 jogging_speed = 0.0
 
 [node name="CollisionShape" type="CollisionShape" parent="."]

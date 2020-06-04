@@ -1,11 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://AssetScenes/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://AssetScenes/P1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/CameraFollow.gd" type="Script" id=3]
-[ext_resource path="res://AssetScenes/Teammate1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://AssetScenes/BigKCone.tscn" type="PackedScene" id=5]
-[ext_resource path="res://AssetScenes/SmallKCone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Camera.gd" type="Script" id=4]
+[ext_resource path="res://AssetScenes/Teammate1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AssetScenes/BigKCone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://AssetScenes/SmallKCone.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Area3Dk.tscn" type="PackedScene" id=9]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node
@@ -53,6 +56,7 @@ player_path = NodePath("../P1")
 [node name="Camera" type="Camera" parent="CameraFollow"]
 transform = Transform( -4.37114e-08, 0.258819, -0.965926, -4.88498e-14, 0.965926, 0.258819, 1, 1.13134e-08, -4.2222e-08, -4.99999, 2, 0 )
 far = 200.0
+script = ExtResource( 4 )
 
 [node name="Path" type="Path" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 4, -28 )
@@ -62,56 +66,63 @@ curve = SubResource( 2 )
 transform = Transform( 0.946343, 0.0100685, 0.323008, -0.0073102, 0.999926, -0.00975154, -0.323083, 0.00686704, 0.946346, 0.16143, -0.0397491, 0.364056 )
 loop = false
 
-[node name="Teammate1" parent="Path/PathFollow" instance=ExtResource( 4 )]
+[node name="Teammate1" parent="Path/PathFollow" instance=ExtResource( 5 )]
 transform = Transform( -0.34199, -0.00377604, -0.939696, -0.00308828, 0.99999, -0.00289441, 0.939698, 0.00191218, -0.341999, 0, 0, 0 )
 
 [node name="Cones" type="Spatial" parent="."]
 editor/display_folded = true
 
-[node name="BigKCone" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 2, -51 )
 
-[node name="BigKCone2" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone2" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 2, -87 )
 
-[node name="BigKCone3" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone3" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 2, -87 )
 
-[node name="BigKCone4" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone4" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, -73 )
 
-[node name="BigKCone5" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone5" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, -61 )
 
-[node name="BigKCone6" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone6" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -61 )
 
-[node name="BigKCone7" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone7" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -73 )
 
-[node name="BigKCone8" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone8" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -75 )
 
-[node name="BigKCone9" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone9" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -87 )
 
-[node name="BigKCone10" parent="Cones" instance=ExtResource( 5 )]
+[node name="BigKCone10" parent="Cones" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -45 )
 
-[node name="SmallKCone" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 2, -50 )
 
-[node name="SmallKCone2" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone2" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 2, -53 )
 
-[node name="SmallKCone3" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone3" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 2, -85 )
 
-[node name="SmallKCone4" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone4" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 2, -88 )
 
-[node name="SmallKCone5" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone5" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 2, -88 )
 
-[node name="SmallKCone6" parent="Cones" instance=ExtResource( 6 )]
+[node name="SmallKCone6" parent="Cones" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 2, -85 )
+
+[node name="GUI" parent="." instance=ExtResource( 8 )]
+
+[node name="Area" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 4, -66 )
+
+[editable path="P1"]
