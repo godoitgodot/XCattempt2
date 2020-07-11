@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cone1Orange.obj-d4f5ab373c8543a6b9c3f0d0a77f818d.mesh"
+
+[deps]
+
+files=[ "res://.import/Cone1Orange.obj-d4f5ab373c8543a6b9c3f0d0a77f818d.mesh" ]
+
+source_file="res://GridMap/BlenderImports/Cone1Orange.obj"
+dest_files=[ "res://.import/Cone1Orange.obj-d4f5ab373c8543a6b9c3f0d0a77f818d.mesh", "res://.import/Cone1Orange.obj-d4f5ab373c8543a6b9c3f0d0a77f818d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

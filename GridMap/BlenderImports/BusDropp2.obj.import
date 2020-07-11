@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BusDropp2.obj-53c3b9b2d7c1d872e6036ca2b4a19a55.mesh"
+
+[deps]
+
+files=[ "res://.import/BusDropp2.obj-53c3b9b2d7c1d872e6036ca2b4a19a55.mesh" ]
+
+source_file="res://GridMap/BlenderImports/BusDropp2.obj"
+dest_files=[ "res://.import/BusDropp2.obj-53c3b9b2d7c1d872e6036ca2b4a19a55.mesh", "res://.import/BusDropp2.obj-53c3b9b2d7c1d872e6036ca2b4a19a55.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

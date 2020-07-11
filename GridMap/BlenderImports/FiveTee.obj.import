@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FiveTee.obj-5ebf0e5d6ac59d9d5d3cb4ffcad1b291.mesh"
+
+[deps]
+
+files=[ "res://.import/FiveTee.obj-5ebf0e5d6ac59d9d5d3cb4ffcad1b291.mesh" ]
+
+source_file="res://GridMap/BlenderImports/FiveTee.obj"
+dest_files=[ "res://.import/FiveTee.obj-5ebf0e5d6ac59d9d5d3cb4ffcad1b291.mesh", "res://.import/FiveTee.obj-5ebf0e5d6ac59d9d5d3cb4ffcad1b291.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

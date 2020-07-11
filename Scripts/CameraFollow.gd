@@ -10,6 +10,9 @@ func _ready():
     # camera is not aligned with player at the start of the scene
     translation = player.translation
     rotation = player.rotation
+	
+    
+    
 
 func _physics_process(delta):
     # Make the camera follow the player
@@ -20,3 +23,5 @@ func _physics_process(delta):
     # me a little while to figure out how to do in Godot. You can change the interpolation speed
     # with the final number.
     transform.basis = transform.basis.get_rotation_quat().slerp(player.transform.basis.get_rotation_quat(), 0.1)
+
+    

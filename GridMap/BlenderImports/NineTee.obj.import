@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/NineTee.obj-ea1175efde0731b115319ef64bf012ce.mesh"
+
+[deps]
+
+files=[ "res://.import/NineTee.obj-ea1175efde0731b115319ef64bf012ce.mesh" ]
+
+source_file="res://GridMap/BlenderImports/NineTee.obj"
+dest_files=[ "res://.import/NineTee.obj-ea1175efde0731b115319ef64bf012ce.mesh", "res://.import/NineTee.obj-ea1175efde0731b115319ef64bf012ce.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

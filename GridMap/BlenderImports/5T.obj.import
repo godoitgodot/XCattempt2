@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/5T.obj-4ee20185484e30ae3b97730187c4a910.mesh"
+
+[deps]
+
+files=[ "res://.import/5T.obj-4ee20185484e30ae3b97730187c4a910.mesh" ]
+
+source_file="res://GridMap/BlenderImports/5T.obj"
+dest_files=[ "res://.import/5T.obj-4ee20185484e30ae3b97730187c4a910.mesh", "res://.import/5T.obj-4ee20185484e30ae3b97730187c4a910.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

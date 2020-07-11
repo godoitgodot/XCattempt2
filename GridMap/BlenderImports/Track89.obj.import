@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Track89.obj-cc90ae1ece1b61bf20558e037812cb3c.mesh"
+
+[deps]
+
+files=[ "res://.import/Track89.obj-cc90ae1ece1b61bf20558e037812cb3c.mesh" ]
+
+source_file="res://GridMap/BlenderImports/Track89.obj"
+dest_files=[ "res://.import/Track89.obj-cc90ae1ece1b61bf20558e037812cb3c.mesh", "res://.import/Track89.obj-cc90ae1ece1b61bf20558e037812cb3c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

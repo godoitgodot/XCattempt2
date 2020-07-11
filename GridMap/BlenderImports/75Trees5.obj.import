@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/75Trees5.obj-ce51bb459b6f23559d1e23786f08191d.mesh"
+
+[deps]
+
+files=[ "res://.import/75Trees5.obj-ce51bb459b6f23559d1e23786f08191d.mesh" ]
+
+source_file="res://GridMap/BlenderImports/75Trees5.obj"
+dest_files=[ "res://.import/75Trees5.obj-ce51bb459b6f23559d1e23786f08191d.mesh", "res://.import/75Trees5.obj-ce51bb459b6f23559d1e23786f08191d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

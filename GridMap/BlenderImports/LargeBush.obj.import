@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/LargeBush.obj-5c4ffbe71323b83fa649fdae815ebd20.mesh"
+
+[deps]
+
+files=[ "res://.import/LargeBush.obj-5c4ffbe71323b83fa649fdae815ebd20.mesh" ]
+
+source_file="res://GridMap/BlenderImports/LargeBush.obj"
+dest_files=[ "res://.import/LargeBush.obj-5c4ffbe71323b83fa649fdae815ebd20.mesh", "res://.import/LargeBush.obj-5c4ffbe71323b83fa649fdae815ebd20.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

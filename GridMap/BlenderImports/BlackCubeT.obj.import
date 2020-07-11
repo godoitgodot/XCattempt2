@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BlackCubeT.obj-fce5ffc4d757c3aa1d647df4157f1631.mesh"
+
+[deps]
+
+files=[ "res://.import/BlackCubeT.obj-fce5ffc4d757c3aa1d647df4157f1631.mesh" ]
+
+source_file="res://GridMap/BlenderImports/BlackCubeT.obj"
+dest_files=[ "res://.import/BlackCubeT.obj-fce5ffc4d757c3aa1d647df4157f1631.mesh", "res://.import/BlackCubeT.obj-fce5ffc4d757c3aa1d647df4157f1631.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

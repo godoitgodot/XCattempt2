@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BlackishCube.obj-4a486d0966d347d51929ab7a2983b12b.mesh"
+
+[deps]
+
+files=[ "res://.import/BlackishCube.obj-4a486d0966d347d51929ab7a2983b12b.mesh" ]
+
+source_file="res://GridMap/BlenderImports/BlackishCube.obj"
+dest_files=[ "res://.import/BlackishCube.obj-4a486d0966d347d51929ab7a2983b12b.mesh", "res://.import/BlackishCube.obj-4a486d0966d347d51929ab7a2983b12b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

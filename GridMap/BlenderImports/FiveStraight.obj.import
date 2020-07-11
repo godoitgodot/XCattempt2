@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FiveStraight.obj-39fe1746cd673e6c2670f2b2a46b786d.mesh"
+
+[deps]
+
+files=[ "res://.import/FiveStraight.obj-39fe1746cd673e6c2670f2b2a46b786d.mesh" ]
+
+source_file="res://GridMap/BlenderImports/FiveStraight.obj"
+dest_files=[ "res://.import/FiveStraight.obj-39fe1746cd673e6c2670f2b2a46b786d.mesh", "res://.import/FiveStraight.obj-39fe1746cd673e6c2670f2b2a46b786d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

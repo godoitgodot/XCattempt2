@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/TeamTentBlue.obj-984574fecc28e22418a8825b5d4fd28a.mesh"
+
+[deps]
+
+files=[ "res://.import/TeamTentBlue.obj-984574fecc28e22418a8825b5d4fd28a.mesh" ]
+
+source_file="res://GridMap/BlenderImports/TeamTentBlue.obj"
+dest_files=[ "res://.import/TeamTentBlue.obj-984574fecc28e22418a8825b5d4fd28a.mesh", "res://.import/TeamTentBlue.obj-984574fecc28e22418a8825b5d4fd28a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

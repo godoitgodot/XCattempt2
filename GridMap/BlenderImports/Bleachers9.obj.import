@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Bleachers9.obj-7b5a30180f92fbf2c5e75e910d12ed47.mesh"
+
+[deps]
+
+files=[ "res://.import/Bleachers9.obj-7b5a30180f92fbf2c5e75e910d12ed47.mesh" ]
+
+source_file="res://GridMap/BlenderImports/Bleachers9.obj"
+dest_files=[ "res://.import/Bleachers9.obj-7b5a30180f92fbf2c5e75e910d12ed47.mesh", "res://.import/Bleachers9.obj-7b5a30180f92fbf2c5e75e910d12ed47.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

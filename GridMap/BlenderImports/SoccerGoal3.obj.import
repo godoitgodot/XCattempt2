@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SoccerGoal3.obj-7e03fa23f821a3fe7ac20a1dd1182be3.mesh"
+
+[deps]
+
+files=[ "res://.import/SoccerGoal3.obj-7e03fa23f821a3fe7ac20a1dd1182be3.mesh" ]
+
+source_file="res://GridMap/BlenderImports/SoccerGoal3.obj"
+dest_files=[ "res://.import/SoccerGoal3.obj-7e03fa23f821a3fe7ac20a1dd1182be3.mesh", "res://.import/SoccerGoal3.obj-7e03fa23f821a3fe7ac20a1dd1182be3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

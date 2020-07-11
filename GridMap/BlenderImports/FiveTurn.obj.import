@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FiveTurn.obj-39e3004152eeb90ff77d7a1d7ff9ada3.mesh"
+
+[deps]
+
+files=[ "res://.import/FiveTurn.obj-39e3004152eeb90ff77d7a1d7ff9ada3.mesh" ]
+
+source_file="res://GridMap/BlenderImports/FiveTurn.obj"
+dest_files=[ "res://.import/FiveTurn.obj-39e3004152eeb90ff77d7a1d7ff9ada3.mesh", "res://.import/FiveTurn.obj-39e3004152eeb90ff77d7a1d7ff9ada3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

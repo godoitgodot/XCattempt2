@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CoolerStand.obj-2c9d9e611bf4db7f64fed45e6ae7d78f.mesh"
+
+[deps]
+
+files=[ "res://.import/CoolerStand.obj-2c9d9e611bf4db7f64fed45e6ae7d78f.mesh" ]
+
+source_file="res://GridMap/BlenderImports/CoolerStand.obj"
+dest_files=[ "res://.import/CoolerStand.obj-2c9d9e611bf4db7f64fed45e6ae7d78f.mesh", "res://.import/CoolerStand.obj-2c9d9e611bf4db7f64fed45e6ae7d78f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

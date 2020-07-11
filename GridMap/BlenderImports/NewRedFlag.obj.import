@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/NewRedFlag.obj-13ed027719d92fbc20dc999fc99a0444.mesh"
+
+[deps]
+
+files=[ "res://.import/NewRedFlag.obj-13ed027719d92fbc20dc999fc99a0444.mesh" ]
+
+source_file="res://GridMap/BlenderImports/NewRedFlag.obj"
+dest_files=[ "res://.import/NewRedFlag.obj-13ed027719d92fbc20dc999fc99a0444.mesh", "res://.import/NewRedFlag.obj-13ed027719d92fbc20dc999fc99a0444.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

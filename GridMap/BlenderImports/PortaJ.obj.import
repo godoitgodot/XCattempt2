@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/PortaJ.obj-bfeb15dee3f7afbf12cd6e8434e5bb46.mesh"
+
+[deps]
+
+files=[ "res://.import/PortaJ.obj-bfeb15dee3f7afbf12cd6e8434e5bb46.mesh" ]
+
+source_file="res://GridMap/BlenderImports/PortaJ.obj"
+dest_files=[ "res://.import/PortaJ.obj-bfeb15dee3f7afbf12cd6e8434e5bb46.mesh", "res://.import/PortaJ.obj-bfeb15dee3f7afbf12cd6e8434e5bb46.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/StreeLineCube.obj-afe779429a3828677d273977b81e0327.mesh"
+
+[deps]
+
+files=[ "res://.import/StreeLineCube.obj-afe779429a3828677d273977b81e0327.mesh" ]
+
+source_file="res://GridMap/BlenderImports/StreeLineCube.obj"
+dest_files=[ "res://.import/StreeLineCube.obj-afe779429a3828677d273977b81e0327.mesh", "res://.import/StreeLineCube.obj-afe779429a3828677d273977b81e0327.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,163 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites_Level/BleacherBench.png" type="Texture" id=1]
+[ext_resource path="res://Sprites_Level/BleacherBenchLip.png" type="Texture" id=2]
+[ext_resource path="res://Sprites_Level/BleacherBenchLipSide.png" type="Texture" id=3]
+[ext_resource path="res://Sprites_Level/BleacherStandBottom.png" type="Texture" id=4]
+[ext_resource path="res://Sprites_Level/BleacherBenchStand1.png" type="Texture" id=5]
+
+
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="BleacherBench" type="StaticBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 14.3325, 0, 0, 0, -2.62268e-08, 0.6, 0, -0.375, -1.63918e-08, 0, -0.25, 0.5 )
+shape = SubResource( 1 )
+
+[node name="Bench" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+
+[node name="Sprite3D" type="Sprite3D" parent="Bench"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -1 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 1 )
+
+[node name="Sprite3D4" type="Sprite3D" parent="Bench"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.25, 2 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 1 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="Bench"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 2 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="Bench"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 2 )
+
+[node name="Sprite3D5" type="Sprite3D" parent="Bench"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5, 0, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 3 )
+
+[node name="Sprite3D6" type="Sprite3D" parent="Bench"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.5, 0, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 3 )
+
+[node name="StandBottom" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="Bottom" type="Sprite3D" parent="StandBottom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.375 )
+alpha_cut = 1
+texture = ExtResource( 4 )
+
+[node name="Bottom4" type="Sprite3D" parent="StandBottom"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0.625 )
+alpha_cut = 1
+texture = ExtResource( 4 )
+
+[node name="Bottom2" type="Sprite3D" parent="StandBottom"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.375 )
+alpha_cut = 1
+texture = ExtResource( 4 )
+
+[node name="Bottom3" type="Sprite3D" parent="StandBottom"]
+transform = Transform( -1, -3.82137e-15, -8.74228e-08, -8.74228e-08, 4.37114e-08, 1, 0, 1, -4.37114e-08, 0, 0.25, 0.375 )
+alpha_cut = 1
+texture = ExtResource( 4 )
+
+[node name="StandHeightLeft" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Stand1" type="Sprite3D" parent="StandHeightLeft"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -0.25, 0.625 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand2" type="Sprite3D" parent="StandHeightLeft"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, -0.25, 0.375 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand3" type="Sprite3D" parent="StandHeightLeft"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -13.125, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand4" type="Sprite3D" parent="StandHeightLeft"]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -12.875, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="StandHeightRight" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 0 )
+
+[node name="Stand1" type="Sprite3D" parent="StandHeightRight"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -0.25, 0.625 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand2" type="Sprite3D" parent="StandHeightRight"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, -0.25, 0.375 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand3" type="Sprite3D" parent="StandHeightRight"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -13.125, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand4" type="Sprite3D" parent="StandHeightRight"]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -12.875, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="StandHeightMiddle" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 0 )
+
+[node name="Stand1" type="Sprite3D" parent="StandHeightMiddle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -0.25, 0.625 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand2" type="Sprite3D" parent="StandHeightMiddle"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, -0.25, 0.375 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand3" type="Sprite3D" parent="StandHeightMiddle"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -13.125, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )
+
+[node name="Stand4" type="Sprite3D" parent="StandHeightMiddle"]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -12.875, -0.25, 0.5 )
+double_sided = false
+alpha_cut = 1
+texture = ExtResource( 5 )

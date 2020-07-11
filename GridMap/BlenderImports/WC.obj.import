@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/WC.obj-11dc7e7f21c15b0aa4e55dd9514db774.mesh"
+
+[deps]
+
+files=[ "res://.import/WC.obj-11dc7e7f21c15b0aa4e55dd9514db774.mesh" ]
+
+source_file="res://GridMap/BlenderImports/WC.obj"
+dest_files=[ "res://.import/WC.obj-11dc7e7f21c15b0aa4e55dd9514db774.mesh", "res://.import/WC.obj-11dc7e7f21c15b0aa4e55dd9514db774.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

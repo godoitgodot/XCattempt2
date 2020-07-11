@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/NewYellowFlag.obj-8c073920cb5fe98dcfbb2106c574fffa.mesh"
+
+[deps]
+
+files=[ "res://.import/NewYellowFlag.obj-8c073920cb5fe98dcfbb2106c574fffa.mesh" ]
+
+source_file="res://GridMap/BlenderImports/NewYellowFlag.obj"
+dest_files=[ "res://.import/NewYellowFlag.obj-8c073920cb5fe98dcfbb2106c574fffa.mesh", "res://.import/NewYellowFlag.obj-8c073920cb5fe98dcfbb2106c574fffa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

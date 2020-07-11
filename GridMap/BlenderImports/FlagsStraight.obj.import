@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FlagsStraight.obj-bfdfdbdd7f7a6be2cbf7ade73e8fe6ff.mesh"
+
+[deps]
+
+files=[ "res://.import/FlagsStraight.obj-bfdfdbdd7f7a6be2cbf7ade73e8fe6ff.mesh" ]
+
+source_file="res://GridMap/BlenderImports/FlagsStraight.obj"
+dest_files=[ "res://.import/FlagsStraight.obj-bfdfdbdd7f7a6be2cbf7ade73e8fe6ff.mesh", "res://.import/FlagsStraight.obj-bfdfdbdd7f7a6be2cbf7ade73e8fe6ff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
