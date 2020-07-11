@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 [gd_scene load_steps=49 format=2]
+=======
+[gd_scene load_steps=12 format=2]
+>>>>>>> master
 
 [ext_resource path="res://GridMap/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes_Racers/P1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/CameraFollow.gd" type="Script" id=3]
+<<<<<<< HEAD
 [ext_resource path="res://Scripts/Camera.gd" type="Script" id=4]
 [ext_resource path="res://Scenes_Racers/Teammate1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes_Racers/FastMurr.tscn" type="PackedScene" id=6]
@@ -40,6 +45,14 @@
 [ext_resource path="res://Scenes_Level/SchoolBuildingSide.tscn" type="PackedScene" id=38]
 [ext_resource path="res://Scenes_Level/SchoolEntrance.tscn" type="PackedScene" id=39]
 [ext_resource path="res://Scenes_Level/Cooler.tscn" type="PackedScene" id=40]
+=======
+[ext_resource path="res://Camera.gd" type="Script" id=4]
+[ext_resource path="res://AssetScenes/Teammate1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AssetScenes/BigKCone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://AssetScenes/SmallKCone.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Area3Dk.tscn" type="PackedScene" id=9]
+>>>>>>> master
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node
@@ -124,7 +137,11 @@ player_path = NodePath("../P1")
 
 [node name="Camera" type="Camera" parent="CameraFollow"]
 transform = Transform( -4.37114e-08, 0.258819, -0.965926, -4.88498e-14, 0.965926, 0.258819, 1, 1.13134e-08, -4.2222e-08, -4.99999, 2, 0 )
+<<<<<<< HEAD
 far = 250.0
+=======
+far = 200.0
+>>>>>>> master
 script = ExtResource( 4 )
 
 [node name="Paths" type="Spatial" parent="."]
@@ -139,7 +156,11 @@ curve = SubResource( 2 )
 transform = Transform( 0.946343, 0.0100685, 0.323008, -0.0073102, 0.999926, -0.00975154, -0.323083, 0.00686704, 0.946346, 0.16143, -0.0397491, 0.364056 )
 loop = false
 
+<<<<<<< HEAD
 [node name="Teammate1" parent="Paths/Path/PathFollow" instance=ExtResource( 5 )]
+=======
+[node name="Teammate1" parent="Path/PathFollow" instance=ExtResource( 5 )]
+>>>>>>> master
 transform = Transform( -0.34199, -0.00377604, -0.939696, -0.00308828, 0.99999, -0.00289441, 0.939698, 0.00191218, -0.341999, 0, 0, 0 )
 
 [node name="Path2" type="Path" parent="Paths"]
@@ -833,6 +854,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 4.125, 0 )
 [node name="Cones" type="Spatial" parent="LevelEnvironment"]
 editor/display_folded = true
 
+<<<<<<< HEAD
 [node name="BigKCone" parent="LevelEnvironment/Cones" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 2, -51 )
 
@@ -1005,5 +1027,59 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 3, -21 )
 
 [node name="Cooler2" parent="LevelEnvironment/TeamCamp" instance=ExtResource( 40 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 3, -21 )
+=======
+[node name="BigKCone" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 2, -51 )
+
+[node name="BigKCone2" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 2, -87 )
+
+[node name="BigKCone3" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 2, -87 )
+
+[node name="BigKCone4" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, -73 )
+
+[node name="BigKCone5" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, -61 )
+
+[node name="BigKCone6" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -61 )
+
+[node name="BigKCone7" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -73 )
+
+[node name="BigKCone8" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -75 )
+
+[node name="BigKCone9" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -87 )
+
+[node name="BigKCone10" parent="Cones" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61, 2, -45 )
+
+[node name="SmallKCone" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 2, -50 )
+
+[node name="SmallKCone2" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 2, -53 )
+
+[node name="SmallKCone3" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 2, -85 )
+
+[node name="SmallKCone4" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 2, -88 )
+
+[node name="SmallKCone5" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 2, -88 )
+
+[node name="SmallKCone6" parent="Cones" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 2, -85 )
+
+[node name="GUI" parent="." instance=ExtResource( 8 )]
+
+[node name="Area" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 4, -66 )
+>>>>>>> master
 
 [editable path="P1"]

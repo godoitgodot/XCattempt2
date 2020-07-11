@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/MedBush.obj-0987cedaeb5ee2144114dab12bf68662.mesh"
+
+[deps]
+
+files=[ "res://.import/MedBush.obj-0987cedaeb5ee2144114dab12bf68662.mesh" ]
+
+source_file="res://BlenderImports/MedBush.obj"
+dest_files=[ "res://.import/MedBush.obj-0987cedaeb5ee2144114dab12bf68662.mesh", "res://.import/MedBush.obj-0987cedaeb5ee2144114dab12bf68662.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

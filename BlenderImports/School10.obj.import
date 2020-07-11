@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/School10.obj-96b299ba5eef785fb67ab1c66e8e8656.mesh"
+
+[deps]
+
+files=[ "res://.import/School10.obj-96b299ba5eef785fb67ab1c66e8e8656.mesh" ]
+
+source_file="res://BlenderImports/School10.obj"
+dest_files=[ "res://.import/School10.obj-96b299ba5eef785fb67ab1c66e8e8656.mesh", "res://.import/School10.obj-96b299ba5eef785fb67ab1c66e8e8656.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

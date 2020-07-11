@@ -21,12 +21,16 @@ func _on_Timer_timeout():
 func _physics_process(delta):
 	
 	if Timer_On == false:
+<<<<<<< HEAD
 		get_node("/root/Game/Paths/Path/PathFollow/Teammate1/CollisionShape/Limp/AnimationPlayer").playback_speed = 0
+=======
+>>>>>>> master
 		return
 		
 
 	if parent.offset > 0 and counter == 0:
 		counter += 1
+<<<<<<< HEAD
 		speed = rng.randi_range(4, 4)
 	elif parent.offset > 20 and counter == 1: 
 		counter += 1
@@ -40,6 +44,22 @@ func _physics_process(delta):
 	elif parent.offset > 220 and counter == 4: 
 		counter += 1
 		speed = rng.randi_range(6, 6)
+=======
+		speed = rng.randi_range(7, 7)
+	elif parent.offset > 20 and counter == 1: 
+		counter += 1
+		speed = rng.randi_range(7, 7)
+	elif parent.offset > 30 and counter == 2: 
+		counter += 1
+		speed = rng.randi_range(7, 7)
+	elif parent.offset > 80 and counter == 3: 
+		counter += 1
+		speed = rng.randi_range(7, 7)
+	elif parent.offset > 120 and counter == 4: 
+		counter += 1
+		speed = rng.randi_range(7, 7)
+	
+>>>>>>> master
 	
 	emit_signal("speed")
 	parent.offset += delta * speed
